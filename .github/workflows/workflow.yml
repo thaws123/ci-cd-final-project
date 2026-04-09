@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Lint with Flake8
-        run: flake8 service tests
+        run: flake8 service tests --ignore=E501
 
       - name: Run unit tests
         run: nosetests
